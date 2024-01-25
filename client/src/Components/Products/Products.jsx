@@ -12,6 +12,7 @@ const Products = () => {
     filteredData,
     totalPrice,
     setTotalPrice,
+    handleSearch,
   } = useContext(MainContext);
   return (
     <section className="products">
@@ -25,7 +26,11 @@ const Products = () => {
             <button onClick={sortLow}>Low</button>
           </div>
           <div className="search">
-            <input type="text" placeholder="Search by name..." />
+            <input
+              type="text"
+              placeholder="Search by name..."
+              onChange={handleSearch}
+            />
           </div>
         </div>
       </div>
@@ -49,9 +54,7 @@ const Products = () => {
                 </span>
               </div>
               <div className="products__bottom__card__description">
-                <Link to={`/${item._id}`}>
-                  {item.description}
-                </Link>
+                <Link to={`/${item._id}`}>{item.description}</Link>
               </div>
               <div className="products__bottom__card__price">
                 <div className="new__price">

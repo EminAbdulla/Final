@@ -153,7 +153,7 @@ function App() {
     sortHigh,
     totalPrice,
     setTotalPrice,
-    basketItem
+    basketItem,
   };
   return (
     <MainContext.Provider value={values}>
