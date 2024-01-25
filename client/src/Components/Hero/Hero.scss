@@ -1,0 +1,65 @@
+.hero__swiper {
+  width: 100%;
+  height: 900px;
+  .hero__slider {
+    background-image: url("https://preview.colorlib.com/theme/estore/assets/img/hero/h1_hero.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    gap: 30px;
+    &__left {
+      position: absolute;
+      bottom: 0;
+      left: 250px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__right {
+      position: absolute;
+      top: 20%;
+      right: 350px;
+      width: 40%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      width: 25%;
+      height: 65%;
+      gap: 50px;
+      &__up {
+        font-size: 40px;
+        color: #2577fd;
+        font-weight: 600;
+      }
+      &__middle {
+        h1 {
+          font-weight: 700;
+          font-size: 100px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      &__button {
+        width: 160px;
+        height: 50px;
+        button {
+          background-color: #2577fd;
+          width: 100%;
+          height: 100%;
+          color: white;
+          border: none;
+          border-radius: 30px;
+          transition: 0.2s;
+          font-size: 18px;
+          font-family: "Poppins", sans-serif;
+          &:hover {
+            background-color: #00b1ff;
+          }
+        }
+      }
+    }
+  }
+}

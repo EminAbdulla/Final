@@ -1,0 +1,100 @@
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 300px;
+  flex-direction: column;
+  &__up {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    &__left {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    &__right {
+      display: flex;
+      gap: 10px;
+      .sort__by__price {
+        display: flex;
+        gap: 10px;
+        button {
+          width: 50px;
+          background: none;
+          border: 1px solid gray;
+          border-radius: 5px;
+        }
+      }
+      .search {
+        width: 150px;
+        height: 30px;
+        outline: none;
+        border: none;
+        input {
+          width: 100%;
+          height: 100%;
+          border: 1px solid gray;
+          border-radius: 20px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    gap: 90px;
+    &__card {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      &__rating {
+        .color {
+          color: #ffbc07;
+          font-size: 18px;
+        }
+      }
+      &__description {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: sans-serif;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      &__price {
+        display: flex;
+        gap: 30px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+        .old__price {
+          color: #ff003c;
+          text-decoration: line-through;
+        }
+      }
+      &__buttons {
+        display: flex;
+        gap: 20px;
+        button {
+          border: 1px solid gray;
+          background: none;
+          border-radius: 5px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  hr {
+    width: 65%;
+  }
+}
